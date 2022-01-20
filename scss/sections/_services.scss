@@ -1,0 +1,30 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+.services{
+
+  .border-end{
+    @include media-breakpoint-down(md){
+      border-right: none !important;
+    }
+  }
+
+  &__content{
+    .icon{
+      font-size: 1.5rem;
+      color: $primary;
+      @include media-breakpoint-up(md){
+        font-size: 4rem;
+      }
+    }
+
+    .h3--title{
+      @include text-gradient;
+    }
+  }
+
+  &__pic{
+    width: 100%;
+  }
+
+
+}
